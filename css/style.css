@@ -4,6 +4,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  min-height: 1vh;
 }
 
 header {
@@ -31,8 +32,11 @@ h2 {
   where it has 20px of padding on both sides, thus the product takes 640px of the page's width, so 1320 - 640 = 680px of white space, to center the product, we'll add a marign of 340px to the right and the left.
 
   P.S this style is not responsive AT ALL. */
-  margin-left: 340px;
-  margin-right: 340px;
+  /* margin-left: 340px; */
+  /* margin-right: 340px; */
+
+  /* Setting margin top and bottom to 1 root em, by default on most browsers is 16px, and for the right and left it's centered by auto. */
+  margin: 1rem auto;
   padding: 20px;
   max-width: 600px; 
   border: solid 1px #ddd;
@@ -52,7 +56,12 @@ img {
 button {
   background-color: #4caf50;
   color: #fff;
-  padding: 10px;
+  /* root em is the browser's default, em the element itself, 
+  so here in the button styling, the font size is the same as the browser's, but padding is half the size of the button's settings.
+  kurtgezagt, em responses to the font size of the element!*/
+
+  font-size: 1rem;
+  padding: 0.5em;
   border: none;
   border-radius: 7px;
 }

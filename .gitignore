@@ -1,4 +1,9 @@
 .DS_Store
 sandbox.html
+<<<<<<< HEAD
 notes.txt
 css/sandbox.css
+=======
+css/sandbox.css
+notes.txt
+>>>>>>> main

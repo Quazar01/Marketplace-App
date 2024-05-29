@@ -1,3 +1,8 @@
+
+* {
+  margin: none;
+  padding: none;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #d4d0d0;
@@ -8,25 +13,37 @@ body {
 }
 
 header {
-  background-color: #d10000;
-  color: white;
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+  grid-auto-rows: minmax(10px, auto);
+  background-color: #792f2f;
+  color: rgb(234, 255, 241);
+  align-items: center;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-.nav-bar {
-  list-style-type: none;
-  text-align: center;
+header h1, header > p {
+  font-family: Cursive;
+}
+
+#page-title {
   margin: 0;
-  padding: 0.5rem;
 }
 
-.nav-bar li {
+.nav-bar{
+  list-style-type: none;
+  text-align: right;
+  padding:0;
+  text-align: center;
+}
+
+.nav-bar li{
   display: inline-block;
-  margin-inline: 1rem;
+  margin-inline: 0.5rem;
 }
 
-.nav-bar li a {
+.nav-bar li a{
   text-decoration: none;
   color: papayawhip;
 }
@@ -35,34 +52,37 @@ header {
   text-decoration: underline;
 }
 
+h2 {
+  margin: 0 0 0 0;
+  color: #4caf50;
+  text-align: center;
+  padding-top: 25px;
+}
 
+.products {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  grid-auto-rows: minmax(10px, auto);
+  grid-row-gap: 5px;
+  justify-items: center;
+  background-color: #fff;
+}
+
+.product-name {
+  color: chocolate;
+}
+/* 
 section {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 5px;
-}
-
-h2 {
-  color: #4caf50;
-  text-align: center;
-}
+} */
 
 .product {
-  /* My browser's width is 1320px, and the product's width is 600px,
-  where it has 20px of padding on both sides, thus the product takes 640px of the page's width, so 1320 - 640 = 680px of white space, to center the product, we'll add a marign of 340px to the right and the left.
-
-  P.S this style is not responsive AT ALL. */
-  /* margin-left: 340px; */
-  /* margin-right: 340px; */
-
-  /* Setting margin top and bottom to 1 root em, by default on most browsers is 16px, and for the right and left it's centered by auto. */
-  margin: 1rem auto;
-  padding: 20px;
-  max-width: 600px; 
-  border: solid 1px #ddd;
-  border-radius: 5px;
+  border: 1px papayawhip solid;
+  border-radius: 15px;
 }
 
 img {
@@ -86,6 +106,7 @@ button {
   padding: 0.5em;
   border: none;
   border-radius: 7px;
+  margin: 0 0 10px 10px;
 }
 
 footer{

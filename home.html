@@ -18,20 +18,30 @@
   <body>
     <header>
 
-      <nav>
-        <ul class="nav-bar">
-          <li><a href="#">Intro</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="#"> <img src="images/logo.png" alt="logo" style="width: 2rem; height: 2rem;"> Marketplace</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="#">About Us</a>
+            </div>
+          </div>
+
+        </div>
       </nav>
 
-      <h1 class="display-2">Marketplace App</h1>
-      
-      <p id="page-describtion">
+      <h1 class="display-2 text-center" id="header-title">Marketplace App</h1>
+
+      <p id="page-describtion" class="text-center">
         This is an html workshop on making a marketplace app page.
       </p>
-
     </header>
     <main>
       <!-- A section for Featured Products -->
@@ -73,6 +83,60 @@
           />
           <div class="product-details ps-1">
             <p>Description of Product 2</p>
+
+            <ul>
+              <li>Price: $30.00</li>
+              <li>Category: Clothing</li>
+              <li>Rating: 4.0/5</li>
+            </ul>
+
+            <div class="email-field">
+              <label for="email"
+                >Email: <a href="mailto:test@test.se">test@test.se</a>
+              </label>
+            </div>
+
+            <button>View Details</button>
+          </div>
+        </div>
+        <div
+          class="product shadow rounded border border-4 border-warning-subtle mb-3 p-1"
+        >
+          <h3 class="product-name ps-2">Product 3</h3>
+          <img
+            src="https://placehold.co/600x400"
+            alt="Second Product"
+            class=""
+          />
+          <div class="product-details ps-1">
+            <p>Description of Product 3</p>
+
+            <ul>
+              <li>Price: $30.00</li>
+              <li>Category: Clothing</li>
+              <li>Rating: 4.0/5</li>
+            </ul>
+
+            <div class="email-field">
+              <label for="email"
+                >Email: <a href="mailto:test@test.se">test@test.se</a>
+              </label>
+            </div>
+
+            <button>View Details</button>
+          </div>
+        </div>
+        <div
+          class="product shadow rounded border border-4 border-warning-subtle mb-3 p-1"
+        >
+          <h3 class="product-name ps-2">Product 4</h3>
+          <img
+            src="https://placehold.co/600x400"
+            alt="Second Product"
+            class=""
+          />
+          <div class="product-details ps-1">
+            <p>Description of Product 4</p>
 
             <ul>
               <li>Price: $30.00</li>
